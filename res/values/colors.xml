@@ -1,0 +1,38 @@
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_opaque">#ffffffff</color>
+    <color name="black_overlay">#66000000</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="light_gray">#f1f1f1</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="light_pink">#fff7f8</color>
+    <color name="salmon">#ffa07a</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_blue">#87CEFA</color>
+    <color name="cyan">#00ffff</color>
+    <color name="orange">#ff8c00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="purple">#a020f0</color>
+    <color name="indigo">#6f00ff</color>
+    
+    <color name="Blue1">#2E04FF</color>
+    <color name="Blue2">#2E1BFF</color>
+    <color name="Blue3">#2E2FFF</color>
+    <color name="Blue4">#2E43FF</color>
+    <color name="Blue5">#2E57FF</color>
+    <color name="Blue6">#2E6BFF</color>
+    <color name="Blue7">#2E7FFF</color>
+    <color name="Blue75">#2E8CFF</color>
+    <color name="Blue8">#2E7DFF</color>
+    
+    <color name="background_color">#ffffff</color>
+    <color name="border_color">#000000</color>
+    <color name="radio_button_frame_color">#f1f1f1</color>
+    
+</resources>

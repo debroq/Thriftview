@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.debroq.tspconnect"
+    android:versionCode="13"
+    android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tc"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="8298000" />
+<!--             android:value="@integer/google_play_services_version" /> -->
+        <activity
+            android:name="com.debroq.tspconnect.LoginActivity"
+            android:icon="@drawable/tc"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.debroq.tspconnect.AccountOverviewActivity"
+            android:background="@color/white"
+        	android:icon="@drawable/tc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+
+            <!-- android:theme="@android:style/Theme.Holo.Light" > -->
+        </activity>
+<!--         <activity -->
+<!--             android:name="com.debroq.tspconnect.DisclaimerActivity" -->
+<!--             android:background="@color/white" -->
+<!--             android:foreground="@color/black" -->
+<!--             android:icon="@drawable/tc" -->
+<!--             android:label="About TSP Connect" -->
+<!--             android:screenOrientation="portrait" -->
+<!--             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" > -->
+<!--         </activity> -->
+        <activity
+            android:name="com.debroq.tspconnect.DisclaimerActivity"
+            android:label="About TSP Connect"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.debroq.tspconnect.AccountBalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.debroq.tspconnect.RecentTransactions"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.debroq.tspconnect.ContributionSummary"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.debroq.tspconnect.ChartActivity"
+            android:label="Current Fund Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

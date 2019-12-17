@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="disclaimer1">TSP Connect has no official connection with the Thrift Savings Plan.  It simply provides access to a limited amount of read-only data including account balances and recent transactions.  It requires your TSP.gov login and password which are transmitted only to TSP.gov.  There are no intermediary services involved to capture your credentials or to track your portfolio.  No personal data is preserved on your mobile device, however, TSP Connect will offer to save your TSP Account Number or user ID on your device as a convenience but that is optional.</string>
+    <string name="disclaimer2">Before using this app, you must have a working TSP.gov login account.  If you forget your account number or password, contact ThriftLine for help.  Go to the TSP.gov website and select “Contact TSP” for the contact number.</string>
+    <string name="disclaimer3">I will never try to contact you in any way to try to ask you for information and there are no nefarious links to suspicious websites or email accounts contained in this app.  The Fund Activity page accesses http://www.google.com/finance only to retrieve the fund activity charts for the F, C, S and I funds.</string>
+    <string name="disclaimer4">TSP Connect uses the Hypertext Transfer Protocol (HTTPS) protocol for secure communications over the network.  HTTPS ensures reasonable protection of the privacy and integrity of your data by creating a secure communications channel.</string>
+	<string name="copyright">Copyright 2016 QuikByte, LLC,  All Rights Reserved</string>
+    <string name="app_name">TSP Connect</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="text_size1">15sp</string>
+    <string name="text_size2">10sp</string>
+    <string name="warning1">You are accessing a United States Government website.  Only TSP participants may use this site.</string>
+    <string name="warning2">The TSP and TSP Connect are not responsible for losses resulting from use of a compromised device.</string>
+    <string name="warning3">For security purposes, your use may be monitored, recorded, and audited.  We may disclose unauthorizewd or improper use to law enforcement personnel investigating or prosecuting a violation of civil or criminal law and to officials of domestic and foreign agencies.  Your use of this application is your consent to these activities.  Unauthorized or improper use may result in civil and criminal penalties.</string>
+	<string name="acct_mailed1">Your account number will be mailed to you at your TSP account address.  If your address has changed, do not ask the TSP to mail your account number until your address is changed in your TSP record.</string>
+	<string name="acct_mailed2">Enter your information below and click Submit to receive your account number in the mail.  You should receive it within 3–5 business days.</string>
+	<string name="acct_bal_info">Account balance information is updated by 6 a.m., Eastern time, each business day.  On occasion, heavy volume during the nightly processing cycle may delay the update by a few hours.</string>
+	<string name="cont_bal_note1">1. Employee Traditional contributions include your tax-defered employee and catch-up contributions.</string>
+	<string name="cont_bal_note2">2. These Agency contributions are always tax-deferred and are included in your traditional account balance.</string>
+	<string name="new_password">If you need a new Web password, you may either ask the TSP to mail you a computer–generated password or you may call 1–877–968–3778, choose option 3 to speak to a Participant Service Representative, and request that your password be reset.  If you would like a mailed password, enter the information below and click Submit.  Your new password will be mailed to your TSP account address.  You should receive it within 3–5 business days, but it may take longer if you are in a remote location or outside of the United States.  You will not have access to your account online until you receive your new password.</string>
+	<string name="quote_delay">20 minute delay</string>
+	<string name="google_url">http://www.google.com/finance</string>
+	<string name="tsp_url">https://www.tsp.gov/ofx</string>
+</resources>

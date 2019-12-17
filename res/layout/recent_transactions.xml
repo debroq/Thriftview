@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:dividerPadding="5dip"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1.0"
+                                android:padding="0dip"
+                                android:text="Lifecycle Funds"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/lifecycleFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" >
+
+                        <!-- Header -->
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:gravity="left"
+                                android:padding="3dip"
+                                android:text="Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="Units"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="Unit Price"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:gravity="center"
+                                android:padding="3dip"
+                                android:text="Total"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <!-- Data -->
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="L 2050"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2050_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2050_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2050_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="L 2040"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2040_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2040_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2040_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="L 2030"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2030_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2030_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2030_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="L 2020"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2020_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2020_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2020_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="L Income"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/lincome_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/lincome_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/lincome_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/orange"
+                        android:dividerPadding="5dip"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1.0"
+                                android:padding="0dip"
+                                android:text="Individual Funds"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/individualFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" >
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="G Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/gfund_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/gfund_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/gfund_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="F Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ffund_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ffund_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ffund_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="C Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/cfund_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/cfund_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/cfund_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="S Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/sfund_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/sfund_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/sfund_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.25"
+                                android:padding="3dip"
+                                android:text="I Fund"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ifund_units"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ifund_price"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$14.51"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ifund_total"
+                                android:layout_weight="0.25"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="10dp" -->
+                    <!-- android:inputType="none" -->
+                    <!-- android:text="You currently do not have any recent transactions." -->
+                    <!-- android:textColor="@color/black" -->
+                    <!-- android:textSize="15sp" /> -->
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/sharesMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Shares:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sharesAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="1234.1234"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/priceMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Share Price:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/priceAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="12.12"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/balanceMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Balance:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/balanceAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="12,345.12"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/distPctMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Account Share:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/distPctAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="12.12%"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/contPctMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Cont Percent:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/contPctAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="12.12%"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/balMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Contributions"
+            android:textSize="20sp"
+            android:textColor="#ff33b5e5"
+            android:typeface="normal" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/traditionalMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Traditional:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/traditionalAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="$81,234.13"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/taxExemptMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Tax Exempt:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/taxExemptAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="$1,234.13"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/rothMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Roth:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rothAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+             android:gravity="right"
+            android:text="$1,234.13"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/agencyAutoMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Agency Auto:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/agencyAutoAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="$1,234.13"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/agencyMatchMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Agency Match:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/agencyMatchAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:text="$1,234.13"
+            android:textSize="20sp" />
+    </TableRow>
+
+</TableLayout>

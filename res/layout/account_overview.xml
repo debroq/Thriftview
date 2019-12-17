@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.quikbyte.tspconnect"
+    android:id="@+id/relayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:fillViewport="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:orientation="vertical" >
+
+<!--             <TableLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:background="@color/white" -->
+<!--                 android:orientation="horizontal" -->
+<!--                 android:shrinkColumns="*" -->
+<!--                 android:stretchColumns="*" > -->
+
+<!--                 <TableRow> -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/logo" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="left" -->
+<!--                         android:focusable="false" -->
+<!--                         android:src="@drawable/logo_tsp_connect" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/menuicon" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="right" -->
+<!--                         android:layout_marginRight="0dp" -->
+<!--                         android:gravity="right" -->
+<!--                         android:onClick="toggle_menu" -->
+<!--                         android:padding="3dip" -->
+<!--                         android:src="@drawable/menu_icon" /> -->
+<!--                 </TableRow> -->
+<!--             </TableLayout> -->
+
+            <!-- Collapsing menu -->
+
+<!--             <FrameLayout -->
+<!--                 android:id="@+id/menuframe" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:background="@drawable/frame_border" > -->
+
+<!--                 <TableLayout -->
+<!--                     android:id="@+id/lifecycleFunds" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginTop="0dp" -->
+<!--                     android:background="@color/black" -->
+<!--                     android:shrinkColumns="*" -->
+<!--                     android:stretchColumns="*" > -->
+
+<!--                     <TableRow -->
+<!--                         android:layout_margin="1dp" -->
+<!--                         android:background="@color/light_gray" > -->
+
+<!--                         <TextView -->
+<!--                             android:padding="3dip" -->
+<!--                             android:text="Select Option" -->
+<!--                             android:textColor="@color/black" -->
+<!--                             android:textSize="20sp" /> -->
+<!--                     </TableRow> -->
+
+<!--                     <TableRow -->
+<!--                         android:layout_margin="1dp" -->
+<!--                         android:background="@color/light_gray" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/menuShowDailyFundAct" -->
+<!--                             android:layout_marginLeft="10dp" -->
+<!--                             android:onClick="showDailyFundActivity" -->
+<!--                             android:padding="3dip" -->
+<!--                             android:text="Daily Fund Activity" -->
+<!--                             android:textColor="@color/blue" -->
+<!--                             android:textSize="20sp" /> -->
+<!--                     </TableRow> -->
+
+ 
+<!--                     <TableRow -->
+<!--                         android:layout_margin="1dp" -->
+<!--                         android:background="@color/light_gray" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/menuShowAbout" -->
+<!--                             android:layout_marginLeft="10dp" -->
+<!--                             android:onClick="showAbout" -->
+<!--                             android:padding="3dip" -->
+<!--                             android:text="About TSP Connect" -->
+<!--                             android:textColor="@color/blue" -->
+<!--                             android:textSize="20sp" /> -->
+<!--                     </TableRow> -->
+<!--                 </TableLayout> -->
+<!--             </FrameLayout> -->
+
+            <!-- End of collapsing menu -->
+
+
+            <!-- Account Balance shaded area -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/account_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.70"
+                            android:inputType="none"
+                            android:text="Account Balance: $370,803.11"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- <LinearLayout -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:layout_marginTop="5dp" -->
+                    <!-- android:orientation="horizontal" > -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:text="Based on share prices as of close of business "
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/statement_date" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:inputType="none" -->
+                    <!-- android:text="04/15/2016." -->
+                    <!-- android:textColor="@color/black" -->
+                    <!-- android:textSize="10sp" /> -->
+                    <!-- </LinearLayout> -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:text="Balance as of:"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/balance_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="none"
+                            android:text="04-18-2016"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/calendar" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="20dp" -->
+                        <!-- android:layout_marginLeft="1dp" -->
+                        <!-- android:layout_marginTop="2dp" -->
+                        <!-- android:focusable="true" -->
+                        <!-- android:src="@drawable/calendar_icon" /> -->
+
+
+                        <!-- <FrameLayout -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_marginBottom="2dp" -->
+                        <!-- android:layout_marginLeft="10dp" -->
+                        <!-- android:layout_marginTop="2dp" -->
+                        <!-- android:background="@drawable/orange_button_border" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:layout_width="40dp" -->
+                        <!-- android:layout_height="20dp" -->
+                        <!-- android:layout_marginTop="1dp" -->
+                        <!-- android:inputType="none" -->
+                        <!-- android:text="  Go  " -->
+                        <!-- android:textColor="@color/white" -->
+                        <!-- android:textSize="15sp" /> -->
+                        <!-- </FrameLayout> -->
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Create Tabs for Acct Balances or Cont Summary -->
+
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:textColor="@color/black" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- android:layout_marginBottom="5dp" -->
+                    <!-- android:layout_marginLeft="10dp" -->
+                    <!-- android:layout_marginRight="10dp" -->
+                    <!-- android:layout_marginTop="5dp" -->
+                    <!-- android:gravity="center_vertical" -->
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:tabStripEnabled="true"
+                        android:textColor="@color/black" >
+
+                        <!-- android:gravity="top|fill_horizontal|start" > -->
+
+
+                        <!-- android:layout_gravity="center_vertical|center_horizontal" -->
+                        <!-- android:layout_weight="1.0" -->
+                        <!-- android:background="@color/white" -->
+                        <!-- android:clickable="false" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:longClickable="false" -->
+                        <!-- android:textSize="20sp" > -->
+
+                    </TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black" >
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </ScrollView>
+
+<!--     <com.google.android.gms.ads.AdView -->
+<!--         android:id="@+id/adView" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         ads:asSize="BANNER" -->
+<!--         ads:adUnitId="ca-app-pub-7497413672008464/5461495972" > -->
+<!-- 	</com.google.android.gms.ads.AdView> -->
+        
+</RelativeLayout>

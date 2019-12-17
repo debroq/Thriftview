@@ -1,0 +1,91 @@
+# view AndroidManifest.xml #generated:60
+-keep class com.debroq.tspconnect.AccountBalanceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.debroq.tspconnect.AccountOverviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.debroq.tspconnect.ChartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.debroq.tspconnect.ContributionSummary { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.debroq.tspconnect.DisclaimerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.debroq.tspconnect.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.debroq.tspconnect.RecentTransactions { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# onClick res/layout/account_balance.xml #generated:445
+# onClick res/layout/account_balance.xml #generated:454
+# onClick res/layout/account_balance.xml #generated:464
+-keepclassmembers class * { *** showDistCFund(...); }
+
+# onClick res/layout/account_balance.xml #generated:406
+# onClick res/layout/account_balance.xml #generated:415
+# onClick res/layout/account_balance.xml #generated:425
+-keepclassmembers class * { *** showDistFFund(...); }
+
+# onClick res/layout/account_balance.xml #generated:367
+# onClick res/layout/account_balance.xml #generated:376
+# onClick res/layout/account_balance.xml #generated:386
+-keepclassmembers class * { *** showDistGFund(...); }
+
+# onClick res/layout/account_balance.xml #generated:524
+# onClick res/layout/account_balance.xml #generated:533
+# onClick res/layout/account_balance.xml #generated:543
+-keepclassmembers class * { *** showDistIFund(...); }
+
+# onClick res/layout/account_balance.xml #generated:227
+# onClick res/layout/account_balance.xml #generated:236
+# onClick res/layout/account_balance.xml #generated:246
+-keepclassmembers class * { *** showDistL2020(...); }
+
+# onClick res/layout/account_balance.xml #generated:188
+# onClick res/layout/account_balance.xml #generated:197
+# onClick res/layout/account_balance.xml #generated:207
+-keepclassmembers class * { *** showDistL2030(...); }
+
+# onClick res/layout/account_balance.xml #generated:146
+# onClick res/layout/account_balance.xml #generated:155
+# onClick res/layout/account_balance.xml #generated:165
+-keepclassmembers class * { *** showDistL2040(...); }
+
+# onClick res/layout/account_balance.xml #generated:107
+# onClick res/layout/account_balance.xml #generated:116
+# onClick res/layout/account_balance.xml #generated:126
+-keepclassmembers class * { *** showDistL2050(...); }
+
+# onClick res/layout/account_balance.xml #generated:267
+# onClick res/layout/account_balance.xml #generated:276
+# onClick res/layout/account_balance.xml #generated:286
+-keepclassmembers class * { *** showDistLIncome(...); }
+
+# onClick res/layout/account_balance.xml #generated:484
+# onClick res/layout/account_balance.xml #generated:493
+# onClick res/layout/account_balance.xml #generated:503
+-keepclassmembers class * { *** showDistSFund(...); }
+
+# onClick res/layout/chart_layout.xml #generated:94
+-keepclassmembers class * { *** showGoogleFinance(...); }
+
+# onClick res/layout/account_balance.xml #generated:313
+# onClick res/layout/account_balance.xml #generated:337
+-keepclassmembers class * { *** toggle_individual_funds(...); }
+
+# onClick res/layout/account_balance.xml #generated:52
+# onClick res/layout/account_balance.xml #generated:77
+-keepclassmembers class * { *** toggle_lifecycle_funds(...); }
+
+# onClick res/layout/disclaimer.xml #generated:90
+-keepclassmembers class * { *** toggle_load(...); }
+
+# onClick res/layout/login_main.xml #generated:75
+-keepclassmembers class * { *** toggle_saveUserId(...); }
+

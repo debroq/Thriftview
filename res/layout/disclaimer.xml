@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/logo" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginTop="10dp" -->
+    <!-- android:focusable="false" -->
+    <!-- android:src="@drawable/logo_tsp_connect" /> -->
+
+<!--  android:layout_below="@+id/logo" -->
+ 
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:paddingBottom="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="top" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:padding="10dp" > -->
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="TSP Connect - Please Read"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/AboutText"
+                android:text="@string/disclaimer1" />
+
+            <TextView
+                style="@style/AboutText"
+                android:text="@string/disclaimer2" />
+
+            <TextView
+                style="@style/AboutText"
+                android:text="@string/disclaimer3" />
+
+            <TextView
+                style="@style/AboutText"
+                android:text="@string/disclaimer4" />
+            <TextView
+                style="@style/AboutText"
+                android:text="@string/copyright" />
+            </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/orange"
+            android:text=" Close " />
+
+        <ImageView
+            android:id="@+id/loadCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="toggle_load"
+            android:padding="3dip"
+            android:src="@drawable/show" />
+    </LinearLayout>
+
+</RelativeLayout>

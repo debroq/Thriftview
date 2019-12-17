@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:dividerPadding="5dip"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="0.60"
+                                android:onClick="toggle_lifecycle_funds"
+                                android:padding="0dip"
+                                android:text="Lifecycle Funds"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lcf_bal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:padding="0dip"
+                                android:text="Balance: $0.00"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/expandlcfunds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="toggle_lifecycle_funds"
+                                android:padding="3dip"
+                                android:src="@drawable/iconarrowdown" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/lifecycleFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" >
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistL2050"
+                                android:padding="3dip"
+                                android:text="L 2050"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2050_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistL2050"
+                                android:padding="3dip"
+                                android:text="$0.00"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistL2050"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistL2040"
+                                android:padding="3dip"
+                                android:text="L 2040"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2040_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistL2040"
+                                android:padding="3dip"
+                                android:text="$0.00"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistL2040"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+
+                            <ImageView>
+                            </ImageView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistL2030"
+                                android:padding="3dip"
+                                android:text="L 2030"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2030_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistL2030"
+                                android:padding="3dip"
+                                android:text="$0.00"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistL2030"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistL2020"
+                                android:padding="3dip"
+                                android:text="L 2020"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/l2020_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistL2020"
+                                android:padding="3dip"
+                                android:text="$0.00"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistL2020"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistLIncome"
+                                android:padding="3dip"
+                                android:text="L Income"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/lincome_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistLIncome"
+                                android:padding="3dip"
+                                android:text="$0.00"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistLIncome"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/orange"
+                        android:dividerPadding="5dip"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:onClick="toggle_individual_funds"
+                                android:padding="0dip"
+                                android:text="Individual Funds"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ind_bal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:padding="0dip"
+                                android:text="Balance: $370,803.11"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/expandindfunds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="toggle_individual_funds"
+                                android:padding="3dip"
+                                android:src="@drawable/iconarrowdown" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/individualFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" >
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistGFund"
+                                android:padding="3dip"
+                                android:text="G Fund Government Securities"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/gfund_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistGFund"
+                                android:padding="3dip"
+                                android:text="$67,778.34"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistGFund"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistFFund"
+                                android:padding="3dip"
+                                android:text="F Fund Fixed Income Index"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ffund_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistFFund"
+                                android:padding="3dip"
+                                android:text="$77,889.39"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistFFund"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistCFund"
+                                android:padding="3dip"
+                                android:text="C Fund Common Stock Index"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/cfund_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistCFund"
+                                android:padding="3dip"
+                                android:text="$122,934.68"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistCFund"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistSFund"
+                                android:padding="3dip"
+                                android:text="S Fund Small Cap Stock Index"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/sfund_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistSFund"
+                                android:padding="3dip"
+                                android:text="$55,183.57"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistSFund"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.60"
+                                android:onClick="showDistIFund"
+                                android:padding="3dip"
+                                android:text="I Fund International Stock Index"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ifund_bal"
+                                android:layout_weight="0.35"
+                                android:gravity="right"
+                                android:onClick="showDistIFund"
+                                android:padding="3dip"
+                                android:text="$47,017.13"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0.05"
+                                android:gravity="right"
+                                android:onClick="showDistIFund"
+                                android:padding="3dip"
+                                android:src="@drawable/plusiconsmall" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/acct_bal_info"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <!-- Account Distribution chart -->
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Account Distribution"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame_border" >
+
+                        <LinearLayout
+                            android:id="@+id/chart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="250dp"
+                            android:layout_below="@+id/heading"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

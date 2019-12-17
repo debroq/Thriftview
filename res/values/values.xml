@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chart_width">300dip</dimen>
+    <dimen name="chart_height">164dip</dimen>
+    <string name="banner_add_unit_id">ca-app-pub-7497413672008464~8951515975</string>
+</resources>

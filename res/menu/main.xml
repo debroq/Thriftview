@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <item -->
+<!--         android:checkable="false" -->
+<!--         android:enabled="false" -->
+<!--         android:orderInCategory="10" -->
+<!--         android:showAsAction="never" -->
+<!--         android:title="Select Option"/> -->
+    <item
+        android:id="@+id/daily_fund_activity"
+        android:orderInCategory="20"
+        android:title="Current Fund Activity"/>
+    <item
+        android:id="@+id/about_tsp"
+        android:orderInCategory="30"
+        android:title="About TSP Connect"/>
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="40"
+        android:title="Exit"/>
+
+</menu>
+
+<!--         android:onClick="dailyFundActivity" -->
+<!--         android:onClick="aboutTSPConnect" -->
+<!--         android:onClick="exit" -->
+        

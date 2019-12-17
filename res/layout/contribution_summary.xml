@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:dividerPadding="5dip"
+                        android:orientation="horizontal" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1.0"
+                                android:padding="0dip"
+                                android:text="Contribution Sources"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1.0"
+                                android:gravity="right"
+                                android:padding="0dip"
+                                android:text="Year-To-Date"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- Data values -->
+
+                    <TableLayout
+                        android:id="@+id/individualFunds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" >
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Traditional"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_traditional"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Agency Auto"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_agencyauto"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Agency Match"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_agencymatch"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Traditional Catchup"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_traditionalcatchup"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Tax Exempt"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_taxexempt"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Roth"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_roth"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/light_gray"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0.50"
+                                android:padding="3dip"
+                                android:text="Roth Catchup"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/ytd_rothcatchup"
+                                android:layout_weight="0.50"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:text="$238.17"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- Contribution % chart -->
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Current Contributions"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/frame_border" >
+
+                        <LinearLayout
+                            android:id="@+id/contchart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="250dp"
+                            android:layout_below="@+id/heading"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

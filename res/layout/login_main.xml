@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollX="0dp" >
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<!--         <ImageView -->
+<!--             android:id="@+id/logo" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:focusable="false" -->
+<!--             android:src="@drawable/logo_tsp_connect" /> -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame_border" >
+
+            <LinearLayout
+                android:id="@+id/inputFields"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/acctNbrStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:inputType="none"
+                    android:text="TSP Account Number:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" >
+
+                        <EditText
+                            android:id="@+id/inputAcctNbr"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.90"
+                            android:background="@color/light_gray"
+                            android:textColor="@color/black"
+                            android:inputType="number" />
+
+                        <ImageView
+                            android:id="@+id/saveUserId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="0.10"
+                            android:gravity="right"
+                            android:onClick="toggle_saveUserId"
+                            android:padding="3dip"
+                            android:src="@drawable/saveunchecked" />
+                    </TableRow>
+                </TableLayout>
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:orientation="horizontal" > -->
+
+                    <!-- Account Nbr radio buttons -->
+
+<!--                     <FrameLayout -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="left" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_marginRight="10dp" -->
+<!--                         android:layout_weight="0.50" -->
+<!--                         android:background="@drawable/frame_border" > -->
+
+<!--                         <RadioGroup -->
+<!--                             android:id="@+id/radioGroup1" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_marginBottom="5dp" -->
+<!--                             android:layout_marginLeft="5dp" -->
+<!--                             android:layout_marginTop="5dp" -->
+<!--                             android:orientation="horizontal" > -->
+
+<!--                             <FrameLayout -->
+<!--                                 android:layout_width="match_parent" -->
+<!--                                 android:layout_height="wrap_content" -->
+<!--                                 android:layout_marginBottom="2dp" -->
+<!--                                 android:layout_marginLeft="10dp" -->
+<!--                                 android:layout_marginRight="2dp" -->
+<!--                                 android:layout_marginTop="2dp" -->
+<!--                                 android:background="@drawable/radio_button_border" > -->
+
+<!--                                 <RadioButton -->
+<!--                                     android:id="@+id/rdo1" -->
+<!--                                     android:layout_width="wrap_content" -->
+<!--                                     android:layout_height="wrap_content" -->
+<!--                                     android:layout_marginLeft="5dp" -->
+<!--                                     android:checked="true" -->
+<!--                                     android:text="Account Number" -->
+<!--                                     android:textColor="@color/black" -->
+<!--                                     android:textSize="15sp" /> -->
+<!--                             </FrameLayout> -->
+
+<!--                             <FrameLayout -->
+<!--                                 android:layout_width="match_parent" -->
+<!--                                 android:layout_height="wrap_content" -->
+<!--                                 android:layout_marginBottom="2dp" -->
+<!--                                 android:layout_marginLeft="10dp" -->
+<!--                                 android:layout_marginRight="2dp" -->
+<!--                                 android:layout_marginTop="2dp" -->
+<!--                                 android:background="@drawable/radio_button_border" > -->
+
+<!--                                 <RadioButton -->
+<!--                                     android:id="@+id/rdo2" -->
+<!--                                     android:layout_width="wrap_content" -->
+<!--                                     android:layout_height="wrap_content" -->
+<!--                                     android:layout_marginLeft="5dp" -->
+<!--                                     android:checked="false" -->
+<!--                                     android:text="User ID" -->
+<!--                                     android:textColor="@color/black" -->
+<!--                                     android:textSize="15sp" /> -->
+<!--                             </FrameLayout> -->
+<!--                         </RadioGroup> -->
+<!--                     </FrameLayout> -->
+
+                    <!-- Civilian or Military radio buttons -->
+<!--                 </LinearLayout> -->
+
+                <!-- End of radio buttons -->
+
+                <TextView
+                    android:id="@+id/passwordStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="none"
+                    android:text="Password:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/light_gray"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/orange"
+                    android:text="Log In" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/forgotAcctNbr" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:inputType="none" -->
+        <!-- android:text="Forgot your account number or user ID?" -->
+        <!-- android:textColor="@color/blue" -->
+        <!-- android:textSize="15sp" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/forgotPassword" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:inputType="none" -->
+        <!-- android:text="Forgot your password?" -->
+        <!-- android:textColor="@color/blue" -->
+        <!-- android:textSize="15sp" /> -->
+
+
+        <!-- Warning message -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/warning_border" >
+
+            <LinearLayout
+                android:id="@+id/warningFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <!-- Warning icon and message -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:src="@drawable/red_exclamation_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:inputType="none"
+                        android:text="Warning:"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/warningStr1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="none"
+                        android:text="@string/warning1"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/showMoreOrLess" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:inputType="none" -->
+                <!-- android:text="Read More" -->
+                <!-- android:textColor="@color/blue" -->
+                <!-- android:textSize="10sp" /> -->
+
+                <TextView
+                    android:id="@+id/warningMore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="none"
+                    android:text="@string/warning2"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/warningMore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="none"
+                    android:text="@string/warning3"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>
