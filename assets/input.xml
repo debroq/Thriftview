@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='US-ASCII'?><?OFX OFXHEADER='200' VERSION='200'?>
+<OFX>
+    <SIGNONMSGSRQV1>
+        <SONRQ>
+            <DTCLIENT>DDDD</DTCLIENT>
+            <USERID>NNNN</USERID>
+            <USERPASS>PPPP</USERPASS>
+            <LANGUAGE>ENG</LANGUAGE>
+            <FI>
+                <ORG>FRTIB</ORG>
+                <FID>TSP</FID>
+            </FI>
+        </SONRQ>
+    </SIGNONMSGSRQV1>
+    <INVSTMTMSGSRQV1>
+        <INVSTMTTRNRQ>
+            <TRNUID>123</TRNUID>
+            <CLTCOOKIE>123</CLTCOOKIE>
+            <INVSTMTRQ>
+                <INVACCTFROM>
+                    <BROKERID>FRTIBTSP</BROKERID>
+                    <ACCTID>TSP</ACCTID>
+                </INVACCTFROM>
+                <INCTRAN>
+                    <DTSTART>EEEE</DTSTART>
+                    <INCLUDE>Y</INCLUDE>
+                </INCTRAN>
+                <INCOO>N</INCOO>
+                <INCPOS>
+                    <DTASOF>DDDD</DTASOF>
+                    <INCLUDE>Y</INCLUDE>
+                </INCPOS>
+                <INCBAL>N</INCBAL>
+                <INC401K>N</INC401K>
+                <INC401KBAL>N</INC401KBAL>
+            </INVSTMTRQ>
+        </INVSTMTTRNRQ>
+    </INVSTMTMSGSRQV1>
+</OFX>
